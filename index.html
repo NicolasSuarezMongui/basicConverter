@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="flex flex-col justify-center items-center container-per">
+        <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl text-white">CONVERTIDOR</h1>
+        <div class="bg-white container-select-branch">
+            <label for="underline_select" class="sr-only"></label>
+            <select id="underline_select" class="block py-2.5 px-2 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer">
+                <option selected value="text_">Unidades de peso</option>
+                <option value="weight">Peso</option>
+                <option value="longitude">Longitud</option>
+                <option value="temperature">Temperatura</option>
+                <option value="time">Tiempo</option>
+            </select>
+        </div>
+        <div class="btns flex flex-row justify-around">
+            <div class="from flex flex-col w-2/4 justify-center">
+                <label for="to_convert" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">De:</label>
+                <select id="to_convert" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                <option selected value="text_">Elegir unidad para convertir</option>
+                </select>
+                
+                <div>
+                    <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"></label>
+                    <input disabled type="number" id="valueToConvert" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter a number" required autocomplete="none">
+                </div>
+            </div>
+    
+            <br>
+
+            <div class="to flex flex-col w-2/4 justify-center">
+                <label for="convert_to" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">A:</label>
+                <select id="convert_to" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                <option selected value="text_">Elegir unidad a convertir</option>
+                </select>
+        
+                
+                <div>
+                    <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"></label>
+                    <input disabled type="tel" id="valueResult" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter a number" required>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    <script type="module" src="./app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+</body>
+
+</html>

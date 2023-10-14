@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("./bg-image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container-per{
+    width: 60%;
+    height: 60%;
+    background: rgba(12, 6, 6, 0.39);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.4px);
+    -webkit-backdrop-filter: blur(12.4px);
+    border: 2px solid rgba(230, 219, 219, 0.54);
+}
+
+
+.container-select-branch{
+    width: 80%;
+    margin: 20px 0;
+}
+
+.btns{
+    width: 80%;
+}
+
+.btns > * {
+    margin: 0 20px;
+}
